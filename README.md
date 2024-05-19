@@ -15,4 +15,5 @@ GIF -fast rocket
 
 
 INSTALLATION-
-Dual boot for windows - 
+Dual boot for windows and ROS Noetic installation- ![Installation guide](https://github.com/Bhaveshmeghwal21/AMC_Summer_Camp-2024/blob/main/Windows.pdf)
+Solidworks installation - 
