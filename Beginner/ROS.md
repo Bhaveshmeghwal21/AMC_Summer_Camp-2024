@@ -21,13 +21,13 @@ Before moving ahead go through the [Basic linux Commands](https://www.geeksforge
 
 ![](https://github.com/Bhaveshmeghwal21/GIFs/blob/main/gif_summer_camp/exciting3.gif)
 
-After completing the installation process, use the following command to check
+After completing the installation process, use the following command in ubuntu 20.04 LTS terminal to check
 ```bash
 roscore 
 ```
 the output should be similar to this 
 
-![](https://wiki.ros.org/ROS/Tutorials/CreatingPackage)
+![](https://github.com/Bhaveshmeghwal21/GIFs/blob/main/gif_summer_camp/roscore-04-1024x501.png)
 
 
 Go through the [ROS basic commands](https://wiki.ros.org/ROS/Tutorials/NavigatingTheFilesystem)
