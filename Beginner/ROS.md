@@ -21,7 +21,18 @@ Before moving ahead go through the [Basic linux Commands](https://www.geeksforge
 
 ![](https://github.com/Bhaveshmeghwal21/GIFs/blob/main/gif_summer_camp/exciting3.gif)
 
+After completing the installation process, use the following command to check
+```bash
+roscore 
+```
+the output should be similar to this 
+
+![](https://wiki.ros.org/ROS/Tutorials/CreatingPackage)
 
 
+Go through the [ROS basic commands](https://wiki.ros.org/ROS/Tutorials/NavigatingTheFilesystem)
+# ROS tutorials
+## Creating a ROS Package
+Follow this tutorial for [creating a ROS package](https://wiki.ros.org/ROS/Tutorials/CreatingPackage)
 
 
