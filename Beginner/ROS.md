@@ -13,8 +13,8 @@ Simulation is an important step in the development of drones. Here are some key 
 
 # Robot Operating System (ROS)
 The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. And it's all open source.
-(_reference https://www.ros.org/ _)
+(_reference https://www.ros.org/_)
 
 ![](https://github.com/Bhaveshmeghwal21/GIFs/blob/main/gif_summer_camp/ROS_logo.png)
 
-
+Before moving ahead go through the [Basic linux Commands](https://www.geeksforgeeks.org/basic-linux-commands/) and 
