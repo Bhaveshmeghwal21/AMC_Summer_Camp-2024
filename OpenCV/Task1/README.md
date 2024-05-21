@@ -7,12 +7,9 @@ Building a document scanner with OpenCV can be accomplished in just three simple
 - Step 3: Apply a perspective transform to obtain the top-down view of the document.
 
 
-
-<p align="center">
-<img src="Photos/page">
-</p>
+ **Original Document**
+  ![Original Document](Photos/page.jpg)
 
 
-<p align="center">
-<img src="Photos/scanned/page">
-</p>
+  **Scanned Document**
+  ![Scanned Document](Photos/scanned_page.jpg)
