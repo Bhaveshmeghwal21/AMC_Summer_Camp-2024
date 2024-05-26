@@ -83,8 +83,9 @@ rosservice call /reset
 - [srv](https://wiki.ros.org/srv)
 - [creating a ROS msg and srv](https://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv)
 - [Examining the simple publisher and subscriber](https://wiki.ros.org/ROS/Tutorials/ExaminingPublisherSubscriber)
-- [Writing the simple service and client (python)](https://wiki.ros.org/ROS/Tutorials/WritingServiceClient%28python%29)
+- [Writing a simple publisher and subscriber (Python)](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29)
 - [Examining the simple service and client](https://wiki.ros.org/ROS/Tutorials/WritingServiceClient%28python%29)
+- [Writing the simple service and client (python)](https://wiki.ros.org/ROS/Tutorials/WritingServiceClient%28python%29)
 
 
 
