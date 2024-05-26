@@ -32,10 +32,51 @@ the output should be similar to this
 
 Go through the [ROS basic commands](https://wiki.ros.org/ROS/Tutorials/NavigatingTheFilesystem)
 # ROS tutorials
+**NOTE** You should also follow these video tutorials for complete ROS [beginner](https://www.youtube.com/playlist?list=PL868twsx7OjdnroeAUFVBGlKGnFGi9txc) (watch only from 2-9)
 - [creating a ROS package](https://wiki.ros.org/ROS/Tutorials/CreatingPackage)
 - [Building a ROS package](https://wiki.ros.org/ROS/Tutorials/BuildingPackages)
 - [ROS Nodes](https://wiki.ros.org/ROS/Tutorials/UnderstandingNodes)
 - [ROS Topics](https://wiki.ros.org/ROS/Tutorials/UnderstandingTopics)
+
+## Practice 1
+Terminal 1
+```bash
+roscore
+```
+Terminal 2
+```bash
+rosrun turtlesim turtlesim_node
+```
+Turtle should be spawned
+
+Terminal 3  
+```bash
+rostopic pub -r 1 /turtle1/cmd_vel geometry_msgs/Twist "linear:
+  x: 1.0
+  y: 0.0
+  z: 0.0
+angular:
+  x: 0.0
+  y: 0.0
+  z: 1.0" 
+```
+Your turtle should move
+Note that 
+- -r 1 means it will publish at the rate of 1 Hz _(check out [rostopic](http://wiki.ros.org/rostopic)]_
+- /turtle/cmd_vel is a topic and geometry_msgs/Twist is a msg type (data type). Don't worry you will understand later in this tutorial
+
+Terminal 4
+```bash
+rosrun turtlesim turtle_teleop_key
+```
+Now you can also control your turtle with arrows key
+
+To reset, type 
+```bash
+rosservice call /reset
+```
+
+
 - [ROS Services and Parameters](https://wiki.ros.org/ROS/Tutorials/UnderstandingTopics)
 - [rqt console and roslaunch](https://wiki.ros.org/ROS/Tutorials/UsingRqtconsoleRoslaunch)
 - [msg](https://wiki.ros.org/msg)
@@ -45,7 +86,7 @@ Go through the [ROS basic commands](https://wiki.ros.org/ROS/Tutorials/Navigatin
 - [Writing the simple service and client (python)](https://wiki.ros.org/ROS/Tutorials/WritingServiceClient%28python%29)
 - [Examining the simple service and client](https://wiki.ros.org/ROS/Tutorials/WritingServiceClient%28python%29)
 
-**NOTE** You can also follow these video tutorials for complete ROS [beginner](https://www.youtube.com/playlist?list=PL868twsx7OjdnroeAUFVBGlKGnFGi9txc) (watch only from 2-9)
+
 
 
 
