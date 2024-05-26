@@ -75,8 +75,14 @@ To reset, type
 ```bash
 rosservice call /reset
 ```
+At last type 
+```bash
+rosrun rqt_graph rqt_graph
+```
+You should see something like this
+![rqt](https://github.com/Bhaveshmeghwal21/GIFs/blob/main/gif_summer_camp/turtlesim.png)
 
-
+Now you can go on
 - [ROS Services and Parameters](https://wiki.ros.org/ROS/Tutorials/UnderstandingTopics)
 - [rqt console and roslaunch](https://wiki.ros.org/ROS/Tutorials/UsingRqtconsoleRoslaunch)
 - [msg](https://wiki.ros.org/msg)
