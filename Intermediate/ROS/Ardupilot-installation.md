@@ -149,4 +149,4 @@ Let’s try to change mode with mavros: go to plugins / services/ services calle
 Now, you know the base of ROS usage with ArduPilot! ROS got plenty others features that you can use like plotting, 3d visualisation, etc.
 
 
-[](https://github.com/yanhwee/ardupilot-gazebo-ros-guide/blob/master/sitl-architecture.svg)
+![](https://github.com/yanhwee/ardupilot-gazebo-ros-guide/blob/master/sitl-architecture.svg)
