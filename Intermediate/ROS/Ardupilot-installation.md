@@ -30,7 +30,13 @@ cd ardupilot/ArduCopter && sim_vehicle.py -v copter --console --map -w
 otherwise 
 reinstall it!!
 
+### Update Mavrproxy and pymavlink
+```bash
+sudo pip install --upgrade pymavlink MAVProxy
+```
+
 Ardupilot capabilities can be extended with ROS
+
 
 # Installing Mavros
 
@@ -47,11 +53,13 @@ sudo apt-get install ros-kinetic-mavros ros-noetic-mavros-extras
 then install GeographicLib datasets by running ```install_geographiclib_datasets.sh``` script
 ```bash
 wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+chmod a+x install_geographiclib_datasets.sh
 ./install_geographiclib_datasets.sh
 ```
 for further info and for source installation visit [mavros-installation](https://github.com/mavlink/mavros/tree/master/mavros#installation##Sourceinstallation)
 
 **Tip** _Prefer binary installation for convinience and source installation for customization for more info ckeck out [Binary installation vs Source installation](https://www.linux.com/training-tutorials/thoughts-package-managers-source-vs-binary/)_
+
 
 # ROS with SITL
 ## Connect ardupilot to ROS 
@@ -149,4 +157,84 @@ Let’s try to change mode with mavros: go to plugins / services/ services calle
 Now, you know the base of ROS usage with ArduPilot! ROS got plenty others features that you can use like plotting, 3d visualisation, etc.
 
 
+
+# Installing Ardupilot Gazebo Plugin
+For Gazebo 11
+```bash
+sudo apt-get install libgazeboX-dev
+```
+```bash
+git clone https://github.com/khancyr/ardupilot_gazebo
+cd ardupilot_gazebo
+mkdir build
+cd build
+cmake ..
+make -j4
+sudo make install
+```
+```bash
+echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
+```
+Set Path of Gazebo Models (Adapt the path to where to clone the repo)(if you have cloned the repo in home directory then no need to change the command
+```bash
+echo 'export GAZEBO_MODEL_PATH=~/ardupilot_gazebo/models' >> ~/.bashrc
+```
+Set Path of Gazebo Worlds (Adapt the path to where to clone the repo)
+```bash
+echo 'export GAZEBO_RESOURCE_PATH=~/ardupilot_gazebo/worlds:${GAZEBO_RESOURCE_PATH}' >> ~/.bashrc
+```
+```bash
+source ~/.bashrc
+```
+**Tip** _You can also create a script file so that you won't have to type every command_
+DONE!!!
+### Test installation 
+Launch a SITL-Ardupilot instance in 1st Terminal
+```bash
+sudo pip install --upgrade pymavlink MAVProxy
+```
+Open a second Terminal and launch Gazebo running ardupilot_gazebo plugin
+```bash
+gazebo --verbose worlds/iris_arducopter_runway.world
+```
+
+
+# Gazebo-ROS plugin (roscam)
+This contains the ROS integrated custom models and .world files for Gazebo
+```bash
+# Source ROS
+source /opt/ros/melodic/setup.bash
+```
+Clone custom gazebo ros-package 
+```bash
+cd ~/
+git clone https://github.com/r0ch1n/ardupilot_gazebo_roscam
+```
+```bash
+cd ardupilot_gazebo_roscam
+catkin init
+```
+```bash
+cd src
+catkin_create_pkg ardupilot_gazebo
+cd ..
+catkin build
+```
+Add custom models adn plugins to gazebo
+```bash
+export GAZEBO_MODEL_PATH=~/ardupilot_gazebo/models:$GAZEBO_MODEL_PATH
+export GAZEBO_MODEL_PATH=~/ardupilot_gazebo_roscam/src/ardupilot_gazebo/models:$GAZEBO_MODEL_PATH
+export GAZEBO_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:$GAZEBO_PLUGIN_PATH 
+export GAZEBO_PLUGIN_PATH=/opt/ros/melodic/lib:$GAZEBO_PLUGIN_PATH
+```
+### Test installation
+```bash
+source ~/ardupilot_gazebo_roscam/devel/setup.bash
+roslaunch ardupilot_gazebo iris_with_roscam.launch
+```
+
+
 ![](https://github.com/yanhwee/ardupilot-gazebo-ros-guide/blob/master/sitl-architecture.svg)
+
+
+
