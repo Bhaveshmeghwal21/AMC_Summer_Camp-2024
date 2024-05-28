@@ -203,7 +203,7 @@ gazebo --verbose worlds/iris_arducopter_runway.world
 This contains the ROS integrated custom models and .world files for Gazebo
 ```bash
 # Source ROS
-source /opt/ros/melodic/setup.bash
+source /opt/ros/noetic/setup.bash
 ```
 Clone custom gazebo ros-package 
 ```bash
@@ -231,6 +231,37 @@ export GAZEBO_PLUGIN_PATH=/opt/ros/melodic/lib:$GAZEBO_PLUGIN_PATH
 ```bash
 source ~/ardupilot_gazebo_roscam/devel/setup.bash
 roslaunch ardupilot_gazebo iris_with_roscam.launch
+```
+# Run it all
+## Gazebo-ROS
+Open one terminal and launch ROS integrated gazebo
+```bash
+#Make sure you have all the right environment, if you are not sure run the following first
+
+source /opt/ros/noetic/setup.bash
+
+export GAZEBO_MODEL_PATH=~/ardupilot_gazebo/models:$GAZEBO_MODEL_PATH
+export GAZEBO_MODEL_PATH=~/ardupilot_gazebo_roscam/src/ardupilot_gazebo/models:$GAZEBO_MODEL_PATH
+export GAZEBO_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:$GAZEBO_PLUGIN_PATH 
+export GAZEBO_PLUGIN_PATH=/opt/ros/melodic/lib:$GAZEBO_PLUGIN_PATH
+
+#Launch ROS integrated Gazebo
+
+source ~/ardupilot_gazebo_roscam/devel/setup.bash
+
+roslaunch ardupilot_gazebo iris_with_roscam.launch
+```
+## Launch SITL Ardupilot
+Open second terminal and launch SITL Ardupilot
+```
+cd ~/ardupilot/ArduCopter
+
+sim_vehicle.py -f gazebo-iris --console --map
+```
+
+## Launch MAVROS
+```bash
+cd ~/ardupilot_ws/src/launch && roslaunch apm.launch
 ```
 
 
