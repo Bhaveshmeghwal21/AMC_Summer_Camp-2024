@@ -233,6 +233,21 @@ export GAZEBO_PLUGIN_PATH=/opt/ros/melodic/lib:$GAZEBO_PLUGIN_PATH
 source ~/ardupilot_gazebo_roscam/devel/setup.bash
 roslaunch ardupilot_gazebo iris_with_roscam.launch
 ```
+
+# QGroundControl Installation (GCS)
+## What is Ground Control Station?
+UAV ground control station (GCS) is a land- or sea-based control centre that provides the facilities for human control of Unmanned Aerial Vehicles (UAVs or "drones").
+## What is QGroundControl??
+QGroundControl (QGC) is an intuitive and powerful ground control station (GCS) for UAVs.
+## Why QGC?
+The primary goal of QGC is ease of use for both first time and professional users. It provides full flight control and mission planning for any MAVLink enabled drone, and vehicle setup for both PX4 and ArduPilot powered UAVs. Instructions for using QGroundControl are provided in the [User Manual](https://docs.qgroundcontrol.com/master/en/qgc-user-guide/index.html) (you may not need them because the UI is very intuitive!)
+Best part is **All the code is open-source, so you can contribute and evolve it as you want. The [Developer Guide](https://docs.qgroundcontrol.com/master/en/qgc-dev-guide/index.html) explains how to [build](https://docs.qgroundcontrol.com/master/en/qgc-dev-guide/getting_started/index.html) and extend QGC.**
+
+**Note** that QGC can be installed/run Ubuntu 20.04 LTS (or later)
+Before installing QGroundControl for the first time:
+
+	On the command prompt enter:
+
 # Run it all
 ## Gazebo-ROS
 Open one terminal and launch ROS integrated gazebo
