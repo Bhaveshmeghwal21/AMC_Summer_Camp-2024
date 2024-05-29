@@ -298,10 +298,9 @@ sim_vehicle.py -f gazebo-iris --console --map
 ```bash
 cd ~/ardupilot_ws/src/launch && roslaunch apm.launch
 ```
-## Launch QGroundControl
-```bash
-cd ~/ && ./QGroundControl.AppImage
-```
+# NOTE
+1. When you launch a SITL-Ardupilot instance MAVProxy is also a GCS. MAVProxy is a fully-functioning GCS for UAV’s, designed as a minimalist, portable and extendable GCS for any autonomous system supporting the MAVLink protocol (such as one using ArduPilot).
+2. 
 
 ![](https://github.com/yanhwee/ardupilot-gazebo-ros-guide/blob/master/sitl-architecture.svg)
 
