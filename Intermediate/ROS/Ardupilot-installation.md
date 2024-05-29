@@ -8,11 +8,12 @@ sudo apt-get install git-gui
 ```
 Clone the ardupilot repo _in your home directory(recommended)_
 ```bash
+cd ~/
 git clone https://github.com/ArduPilot/ardupilot.git
 ```
 For ubuntu ardupilot provides you a [script](https://github.com/ArduPilot/ardupilot/blob/master/Tools/environment_install/install-prereqs-ubuntu.sh) for installation (for more info about script file check out [creating and running a acript file](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/run-Unix-shell-script-Linux-Ubuntu-command-chmod-777-permission-steps))
 ```bash
-cd ardupilot
+cd ~/ardupilot
 Tools/environment_install/install-prereqs-ubuntu.sh -y
 ```
 Reload the path (log-out and log-in to make it permanent)
@@ -23,7 +24,7 @@ for more info you can go through [Setting up the build environment(linux/ubuntu)
 
 to check the installation execute the following command
 ```bash
-cd ardupilot/ArduCopter && sim_vehicle.py -v copter --console --map -w
+cd ~/ardupilot/ArduCopter && sim_vehicle.py -v copter --console --map -w
 ```
 ![](https://github.com/Bhaveshmeghwal21/GIFs/blob/main/gif_summer_camp/Screenshot%20from%202024-05-28%2017-21-41.png)
 
@@ -97,7 +98,7 @@ You should have a new file in your directory called “apm.launch”. “roscp�
 gedit apm.launch
 ```
 You just have to change the first line ``` <arg name="fcu_url" default="/dev/ttyACM0:57600" />```
-In my case it was something like this
+In my case it is something like this
 ```launch
 <launch>
 	<!-- vim: set ft=xml noet : -->
@@ -125,7 +126,7 @@ In my case it was something like this
 	</include>
 </launch>
 ```
-to check type
+### Test installation
 ```bash
 roslaunch apm.launch
 ```
@@ -150,7 +151,7 @@ Let use RQT to how ArduPilot information are shown in ROS. Normally, MAVROS will
 ```bash
 rqt
 ```
-go to plugins/ topics /topics monitor TADAM!!!!!! You see all the topics that mavros has to create from ArduPilot information, click on the box to see the current value. You could see in plugins/robot tools/ runtime monitor that everything is ok! _(You can also type rostopic list in other terminal )_
+go to plugins/ topics /topics monitor TADAM!!!!!! You see all the topics that mavros has to create from ArduPilot information, click on the box to see the current value. You could see in plugins/robot tools/ runtime monitor that everything is ok! _(You can also type ```rostopic list``` in other terminal )_
 
 Let’s try to change mode with mavros: go to plugins / services/ services caller set service to /mavros/set_mode set custom_mode to ‘GUIDED’ and click the call button The response should be true, you can look on /mavros/state topic that the mode is now GUIDED. it should be the same in you MAVProxy console.
 
@@ -161,7 +162,7 @@ Now, you know the base of ROS usage with ArduPilot! ROS got plenty others featur
 # Installing Ardupilot Gazebo Plugin
 For Gazebo 11
 ```bash
-sudo apt-get install libgazeboX-dev
+sudo apt-get install libgazebo11-dev
 ```
 ```bash
 git clone https://github.com/khancyr/ardupilot_gazebo
