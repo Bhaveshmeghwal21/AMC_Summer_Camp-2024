@@ -264,6 +264,8 @@ To install QGC
 chmod +x ./QGroundControl.AppImage
 ./QGroundControl.AppImage  # to run (or double click)
 ```
+**NOTE** Move QGroundControl.AppImage file from downloads directory to home directory or change your directory to Downloads```cd ~/Downloads``` otherwise it will show an error
+for windows and android downloads vist [QGC Downloads](https://docs.qgroundcontrol.com/master/en/qgc-user-guide/getting_started/download_and_install.html)
 
 # Run it all
 ## Gazebo-ROS
@@ -296,7 +298,10 @@ sim_vehicle.py -f gazebo-iris --console --map
 ```bash
 cd ~/ardupilot_ws/src/launch && roslaunch apm.launch
 ```
-
+## Launch QGroundControl
+```bash
+cd ~/ && ./QGroundControl.AppImage
+```
 
 ![](https://github.com/yanhwee/ardupilot-gazebo-ros-guide/blob/master/sitl-architecture.svg)
 
