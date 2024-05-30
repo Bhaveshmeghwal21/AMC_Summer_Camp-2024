@@ -26,6 +26,8 @@ When running in SITL the sensor data comes from a flight dynamics model in a fli
 - camera gimbals
 - antenna trackers
 - a wide variety of optional sensors, such as Lidars and optical flow sensors
+Adding new simulated vehicle types or sensor types is straightforward.
 
+A big advantage of ArduPilot on SITL is it gives you access to the full range of development tools available to desktop C++ development, such as interactive debuggers, static analyzers and dynamic analysis tools. This makes developing and testing new features in ArduPilot much simpler.
 
 ![](https://ardupilot.org/dev/_images/ArdupilotSoftwareintheLoopSITL.jpg)
