@@ -11,4 +11,21 @@ _**Community is what really sets ArduPilot apart from many other offerings in th
 - Advanced failsafe options bring peace of mind in the event of lost control signal, low battery conditions, or other system failures.
   For more info you can checkout [ardupilot](https://ardupilot.org/ardupilot/)
 
-Now we are gonna install ardupilot
+### Before continuation you should install [ardupilot](https://github.com/Bhaveshmeghwal21/AMC_Summer_Camp-2024/blob/main/Intermediate/ROS/Ardupilot-installation.md)
+
+
+
+# SITL
+The SITL (software in the loop) simulator allows you to run Plane, Copter or Rover without any hardware. It is a build of the autopilot code using an ordinary C++ compiler, giving you a native executable that allows you to test the behaviour of the code without hardware.
+SITL allows you to run ArduPilot on your PC directly, without any special hardware. It takes advantage of the fact that ArduPilot is a portable autopilot that can run on a very wide variety of platforms. Your PC is just another platform that ArduPilot can be built and run on.
+When running in SITL the sensor data comes from a flight dynamics model in a flight simulator. ArduPilot has a wide range of vehicle simulators built in, and can interface to several external simulators. This allows ArduPilot to be tested on a very wide variety of vehicle types. For example, SITL can simulate:
+- multi-rotor aircraft
+- fixed wing aircraft
+- ground vehicles
+- underwater vehicles
+- camera gimbals
+- antenna trackers
+- a wide variety of optional sensors, such as Lidars and optical flow sensors
+
+
+![](https://ardupilot.org/dev/_images/ArdupilotSoftwareintheLoopSITL.jpg)
