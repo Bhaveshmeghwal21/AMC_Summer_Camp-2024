@@ -24,7 +24,7 @@ We will use the detected tag to:
 Using ROS, we will:
 - Publish the pose information of the detected tag to a ROS topic.
 - Subscribe to this topic with a landing controller node.
-- Guide the robot/drone to land on the tag using the pose information.
+- Guide the drone to land on the tag using the pose information.
 
 
 ### Detected ArUco Tag
