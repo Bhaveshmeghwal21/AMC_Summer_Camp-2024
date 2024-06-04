@@ -7,6 +7,9 @@ Here is a fun activity 😃
 
 Now you have to choose components of drones from online store and design a drone. Submit the list of the parts(with link) in excel sheet and calculate flight time for hovering & payload in the submission form
 
+**NOTE** 
+- Either you can use this formula $(BatteryCapacity/CurrentDraw)*BatteryDischarge*60 $
+
 # Mechanical Design
 If you have not installed Solidworks then you can install it from here
 
