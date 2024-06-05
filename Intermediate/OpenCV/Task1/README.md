@@ -40,3 +40,7 @@ To get started, ensure you have the following installed:
 - OpenCV
 - ROS (Robot Operating System)
 
+## Resources
+
+- For ArUco tags and OpenCV - https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html     
+- https://pyimagesearch.com/2020/12/21/detecting-aruco-markers-with-opencv-and-python/
