@@ -8,7 +8,10 @@ Here is a fun activity 😃
 Now you have to choose components of drones from online store and design a drone. Submit the list of the parts(with link) in excel sheet and calculate flight time for hovering & payload in the submission form
 
 **NOTE** 
-- Either you can use this formula $(BatteryCapacity/CurrentDraw)*BatteryDischarge*60 $
+- When you choose a BLDC motor, you can find a thrust-current relation in their official website so that you can get your current draw with your payload. For eg check out [emax-mt2213 935kv](https://emaxmodel.com/products/emax-mt2213-935kv-multicopter-brushless-motor)
+- Also for flight time of hovering, consider current drawn by motor only
+
+
 
 # Mechanical Design
 If you have not installed Solidworks then you can install it from here
