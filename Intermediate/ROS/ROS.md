@@ -31,3 +31,64 @@ Adding new simulated vehicle types or sensor types is straightforward.
 A big advantage of ArduPilot on SITL is it gives you access to the full range of development tools available to desktop C++ development, such as interactive debuggers, static analyzers and dynamic analysis tools. This makes developing and testing new features in ArduPilot much simpler.
 
 ![](https://ardupilot.org/dev/_images/ArdupilotSoftwareintheLoopSITL.jpg)
+
+# Copter SITL/MAVProxy Tutorial
+## MAVProxy
+For those wondering why there is a map when you launch SITL, well it is due to MAVProxy.
+MAVProxy is a fully-functioning GCS for UAV’s, designed as a minimalist, portable and extendable GCS for any autonomous system supporting the MAVLink protocol (such as one using ArduPilot). MAVProxy is a powerful command-line based “developer” ground station software. It can be extended via add-on modules, or complemented with another ground station, such as Mission Planer, APM Planner 2, QGroundControl etc, to provide a graphical user interface.
+
+Now launch SITL
+```bash
+cd ~/ardupilot/ArduCopter
+sim_vehicle.py --map --console
+```
+Note that by default Copter is being started, well it is because your directory is ```~/ardupilot/ArduCopter``` 
+The MAVProxy Command Prompt, Console and Map should be arranged conveniently so you can observe the status and send commands at the same time.
+
+![](https://ardupilot.org/dev/_images/mavproxy_sitl_console_and_map.jpg)
+
+
+**Tips**
+- You can also change your frame in using ```-f``` paramter. A complete list of startup options for the simulator can be found using the –help option:
+```bash
+sim_vehicle.py --help
+```
+- Also if you want to change your quad start location, you can start the simulator with the vehicle at a particular location by calling sim_vehicle.py with the ```-L``` parameter and a named location in the ```~/ardupilot/Tools/autotest/locations.txt``` file.
+
+You can add your own locations to the file. The order is Lat,Lng,Alt,Heading where alt is MSL and in meters, and heading is degrees.
+for eg add ```Vivekananda=25.259073,82.986746,84.2,0``` in ```~/ardupilot/Tools/autotest/locations.txt```
+
+then
+```bash
+cd ~/ardupilot/ArduCopter && sim_vehicle.py -f gazebo-iris -L Vivekananda --console --map
+```
+
+TADAMM!!! now you can see that start location of your drone is at the centre of the Vivekananda Hostel 
+
+_for more check out [Using sim_vehicle.py](https://ardupilot.org/dev/docs/using-sitl-for-ardupilot-testing.html#using-sim-vehicle-py)_
+
+## Taking off
+This section explains how to take off in ```GUIDED``` mode. The main steps are to change to ```GUIDED``` mode, arm the throttle, and then call the ```takeoff``` command. **Takeoff must start within 15 seconds of arming, or the motors will disarm!**
+
+**NOTE** At time of writing, Copter only supports takeoff in guided mode; if you want to fly a mission you first have to take off and then switch to AUTO mode. For more flight modes you can check out [Flight Modes](https://ardupilot.org/copter/docs/flight-modes.html)
+
+Enter the following commands in the MAVProxy Command Prompt.
+```bash
+mode guided
+arm throttle
+takeoff 40
+```
+Copter should take off to an altitude of 40 metres and then hover (while it waits for the next command).
+
+## Changing flight mode - circle and land
+The command below shows how to put Copter into CIRCLE mode with a CIRCLE_RADIUS of 2000cm. This will fly the Copter in a circle at a constant altitude, with the front pointed towards the centre of the circle.
+
+
+
+
+
+
+
+
+
+
