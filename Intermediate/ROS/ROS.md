@@ -31,3 +31,31 @@ Adding new simulated vehicle types or sensor types is straightforward.
 A big advantage of ArduPilot on SITL is it gives you access to the full range of development tools available to desktop C++ development, such as interactive debuggers, static analyzers and dynamic analysis tools. This makes developing and testing new features in ArduPilot much simpler.
 
 ![](https://ardupilot.org/dev/_images/ArdupilotSoftwareintheLoopSITL.jpg)
+
+# Copter SITL/MAVProxy Tutorial
+## MavProxy
+For those wondering why there is a map when you launch SITL, well it is due to MAVProxy.
+MAVProxy is a fully-functioning GCS for UAV’s, designed as a minimalist, portable and extendable GCS for any autonomous system supporting the MAVLink protocol (such as one using ArduPilot). MAVProxy is a powerful command-line based “developer” ground station software. It can be extended via add-on modules, or complemented with another ground station, such as Mission Planer, APM Planner 2, QGroundControl etc, to provide a graphical user interface.
+
+Now launch SITL
+```bash
+cd ~/ardupilot/ArduCopter
+sim_vehicle.py --map --console
+```
+Note that by defautl Copter is being spawned, well it is because your directory is ```~/ardupilot/ArduCopter``` 
+
+**Tip**
+- You can also change your frame in using ```-f``` argument.A complete list of startup options for the simulator can be found using the –help option:
+```bash
+sim_vehicle.py --help
+```
+- Also if you want to change your quad start location
+
+
+
+
+
+
+
+
+
