@@ -45,7 +45,7 @@ The mechanical design of a drone frame plays a crucial role in its overall perfo
 
 
 ### Task 2 
-For this you have to design a quadcopter frame, you can watch this [tutorial](https://youtu.be/SU8QDIEdPk0?si=UEd9ODGdl9sptwxL)
+For this you have to design a quadcopter frame, you can watch this [tutorial](https://youtu.be/SU8QDIEdPk0?si=piGcGou45qyMqABW&t=2)
 For submission just screenrecord the last 5 min of designing in solidworks and submit the CAD file & video in link
 
 ## Desginging of propellers
@@ -53,6 +53,8 @@ The design of a propeller is crucial as it directly impacts the drone’s aerody
 
 
 ### Task 3 
-You have to design a propeller in solidworks just follow this [tutorial](https://youtu.be/SU8QDIEdPk0?si=UEd9ODGdl9sptwxL) and you will understand it 
+You have to design a propeller in solidworks just follow this [tutorial](https://youtu.be/ohcwMSK_Yfs?feature=shared) and you will understand it 
 For submission purpose screen record your last 5 min design and submit the CAD file & video in link
+
+_For creativity you can also make a propeller CAD model using this [geometrical data](https://www.apcprop.com/wp-content/uploads/2024/01/PE0-FILES_WEB-202401.zipx)_
 
