@@ -42,9 +42,13 @@ Now launch SITL
 cd ~/ardupilot/ArduCopter
 sim_vehicle.py --map --console
 ```
-Note that by defautl Copter is being spawned, well it is because your directory is ```~/ardupilot/ArduCopter``` 
+Note that by default Copter is being started, well it is because your directory is ```~/ardupilot/ArduCopter``` 
+The MAVProxy Command Prompt, Console and Map should be arranged conveniently so you can observe the status and send commands at the same time.
 
-**Tip**
+![](https://ardupilot.org/dev/_images/mavproxy_sitl_console_and_map.jpg)
+
+
+**Tips**
 - You can also change your frame in using ```-f``` paramter. A complete list of startup options for the simulator can be found using the –help option:
 ```bash
 sim_vehicle.py --help
@@ -59,7 +63,7 @@ then
 cd ~/ardupilot/ArduCopter && sim_vehicle.py -f gazebo-iris -L Vivekananda --console --map
 ```
 
-tadam!!! now you can see that start location of your drone is at the centre of the Vivekananda Hostel 
+TADAMM!!! now you can see that start location of your drone is at the centre of the Vivekananda Hostel 
 
 _for more check out [Using sim_vehicle.py](https://ardupilot.org/dev/docs/using-sitl-for-ardupilot-testing.html#using-sim-vehicle-py)_
 
