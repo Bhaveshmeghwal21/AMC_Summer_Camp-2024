@@ -45,11 +45,18 @@ sim_vehicle.py --map --console
 Note that by defautl Copter is being spawned, well it is because your directory is ```~/ardupilot/ArduCopter``` 
 
 **Tip**
-- You can also change your frame in using ```-f``` argument.A complete list of startup options for the simulator can be found using the –help option:
+- You can also change your frame in using ```-f``` paramter. A complete list of startup options for the simulator can be found using the –help option:
 ```bash
 sim_vehicle.py --help
 ```
-- Also if you want to change your quad start location
+- Also if you want to change your quad start location, you can start the simulator with the vehicle at a particular location by calling sim_vehicle.py with the ```-L``` parameter and a named location in the ```~/ardupilot/Tools/autotest/locations.txt``` file.
+
+You can add your own locations to the file. The order is Lat,Lng,Alt,Heading where alt is MSL and in meters, and heading is degrees.
+for eg 
+```bash
+
+```
+
 
 
 
