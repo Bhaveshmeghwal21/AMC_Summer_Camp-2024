@@ -67,6 +67,21 @@ TADAMM!!! now you can see that start location of your drone is at the centre of 
 
 _for more check out [Using sim_vehicle.py](https://ardupilot.org/dev/docs/using-sitl-for-ardupilot-testing.html#using-sim-vehicle-py)_
 
+## Taking off
+This section explains how to take off in ```GUIDED``` mode. The main steps are to change to ```GUIDED``` mode, arm the throttle, and then call the ```takeoff``` command. **Takeoff must start within 15 seconds of arming, or the motors will disarm!**
+
+**NOTE** At time of writing, Copter only supports takeoff in guided mode; if you want to fly a mission you first have to take off and then switch to AUTO mode. For more flight modes you can check out [Flight Modes](https://ardupilot.org/copter/docs/flight-modes.html)
+
+Enter the following commands in the MAVProxy Command Prompt.
+```bash
+mode guided
+arm throttle
+takeoff 40
+```
+Copter should take off to an altitude of 40 metres and then hover (while it waits for the next command).
+
+## Changing flight mode - circle and land
+The command below shows how to put Copter into CIRCLE mode with a CIRCLE_RADIUS of 2000cm. This will fly the Copter in a circle at a constant altitude, with the front pointed towards the centre of the circle.
 
 
 
