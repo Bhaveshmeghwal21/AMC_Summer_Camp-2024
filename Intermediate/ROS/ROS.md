@@ -95,6 +95,49 @@ Copter supports a [number of other flight modes]((https://ardupilot.org/copter/d
 mode
 Available modes:  dict_keys(['STABILIZE', 'ACRO', 'ALT_HOLD', 'AUTO', 'GUIDED', 'LOITER', 'RTL', 'CIRCLE', 'POSITION', 'LAND', 'OF_LOITER', 'DRIFT', 'SPORT', 'FLIP', 'AUTOTUNE', 'POSHOLD', 'BRAKE', 'THROW', 'AVOID_ADSB', 'GUIDED_NOGPS', 'SMART_RTL', 'FLOWHOLD', 'FOLLOW', 'ZIGZAG', 'SYSTEMID', 'AUTOROTATE', 'AUTO_RTL'])
 ```
+As shown above, you can change the mode by specifying ```mode modename```. Many of the modes can be set by just entering the mode name, e.g. ```rtl```, ```auto```, ```stabilize``` etc.
+
+For example, to land right where you are you would use the command: ```mode land```. To return to the launch point and then land you would use the command: ```rtl```.
+
+## Guiding the vehicle
+Once you’ve taken off you can move the vehicle around the map in ```GUIDED``` mode. The easiest way to do this is to right-click on the map where you want to go, select Fly to, and then enter the target altitude.
+
+![](https://ardupilot.org/dev/_images/MAVProxyCopter_flyto.jpg)
+
+You can also enter the target position manually on the command line using the two formats below. If only the altitude is specified, the last specified LAT/LON will be used.
+```bash
+guided ALTITUDE
+guided LAT LON ALTITUDE
+```
+
+
+In addition to ```takeoff```, you can send the following commands in ```GUIDED``` mode:
+```bash
+setyaw ANGLE ANGULAR_SPEED MODE  (MODE is 0 for "absolute" or 1 for "relative")
+setspeed SPEED_VALUE
+velocity x y z   (m/s)
+```
+## Flying a mission 
+You can load a mission at any time using the ```wp load``` command. After you’ve taken off the current mission will start as soon as you change to AUTO mode.
+
+The example below shows how to load and start one of the test missions, skip to the second waypoint, and loop the mission:
+```bash
+wp load ..\Tools\autotest\Generic_Missions\CMAC-circuit.txt
+mode auto
+wp set 2
+wp loop
+```
+The [MAVProxy Waypoints documentation](https://ardupilot.org/mavproxy/docs/uav_configuration/waypoints.html#mavproxy-waypoints) lists the full set of available commands (or you can get them using auto-completion by typing “wp” on the command line).
+
+If you want to create a waypoint mission, this is most easily done on the map:
+
+
+
+
+
+
+
+
 
 
 
