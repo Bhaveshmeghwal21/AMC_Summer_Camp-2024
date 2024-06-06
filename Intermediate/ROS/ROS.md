@@ -81,8 +81,14 @@ takeoff 40
 Copter should take off to an altitude of 40 metres and then hover (while it waits for the next command).
 
 ## Changing flight mode - circle and land
-The command below shows how to put Copter into CIRCLE mode with a CIRCLE_RADIUS of 2000cm. This will fly the Copter in a circle at a constant altitude, with the front pointed towards the centre of the circle.
+The command below shows how to put Copter into [CIRCLE](https://ardupilot.org/copter/docs/circle-mode.html#circle-mode) mode with a [CIRCLE_RADIUS](https://ardupilot.org/copter/docs/parameters.html#circle-radius) of 2000cm. This will fly the Copter in a circle at a constant altitude, with the front pointed towards the centre of the circle.
 
+```bash
+mode circle
+param set circle_radius 2000
+```
+
+**NOTE** If you set the CIRCLE_RADIUS to zero the vehicle will rotate in place.
 
 
 
