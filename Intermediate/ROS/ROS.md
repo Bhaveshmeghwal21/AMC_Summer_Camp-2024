@@ -140,7 +140,7 @@ If you want to create a waypoint mission, this is most easily done on the map:
 
 3. When you’re done, you can loop the mission by right-clicking on the map and selecting **Mission | Loop**. 
 
-For more SITL info [check out](https://ardupilot.org/dev/docs/using-sitl-for-ardupilot-testing.html#using-sitl-for-ardupilot-testing) and here is the [Reference](https://ardupilot.org/dev/docs/copter-sitl-mavproxy-tutorial.html#copter-sitl-mavproxy-tutorial) of this SITL tutorial
+For more SITL info check out [Using SITL](https://ardupilot.org/dev/docs/using-sitl-for-ardupilot-testing.html#using-sitl-for-ardupilot-testing) and here is the [Reference](https://ardupilot.org/dev/docs/copter-sitl-mavproxy-tutorial.html#copter-sitl-mavproxy-tutorial) of this SITL tutorial
 
 
 
