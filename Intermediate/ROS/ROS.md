@@ -90,9 +90,11 @@ param set circle_radius 2000
 
 **NOTE** If you set the CIRCLE_RADIUS to zero the vehicle will rotate in place.
 
-
-
-
+Copter supports a [number of other flight modes]((https://ardupilot.org/copter/docs/flight-modes.html#flight-modes), which you can list in MAVProxy using the ```mode``` command:
+```bash
+mode
+Available modes:  dict_keys(['STABILIZE', 'ACRO', 'ALT_HOLD', 'AUTO', 'GUIDED', 'LOITER', 'RTL', 'CIRCLE', 'POSITION', 'LAND', 'OF_LOITER', 'DRIFT', 'SPORT', 'FLIP', 'AUTOTUNE', 'POSHOLD', 'BRAKE', 'THROW', 'AVOID_ADSB', 'GUIDED_NOGPS', 'SMART_RTL', 'FLOWHOLD', 'FOLLOW', 'ZIGZAG', 'SYSTEMID', 'AUTOROTATE', 'AUTO_RTL'])
+```
 
 
 
