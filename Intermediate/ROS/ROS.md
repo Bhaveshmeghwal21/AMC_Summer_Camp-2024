@@ -130,7 +130,15 @@ wp loop
 The [MAVProxy Waypoints documentation](https://ardupilot.org/mavproxy/docs/uav_configuration/waypoints.html#mavproxy-waypoints) lists the full set of available commands (or you can get them using auto-completion by typing “wp” on the command line).
 
 If you want to create a waypoint mission, this is most easily done on the map:
+1. Right-click on the map and then select **Mission | Draw**.
 
+![](https://ardupilot.org/dev/_images/MAVProxyCopter_Mission_Draw.jpg)
+
+2. Left-click on the map where you want the points to appear.
+
+**NOTE**Nothing visible will happen when you make the first click. After the second click, lines will join your points to show the path.
+
+3. When you’re done, you can loop the mission by right-clicking on the map and selecting **Mission | Loop**. 
 
 
 
