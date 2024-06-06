@@ -60,7 +60,7 @@ for eg add ```Vivekananda=25.259073,82.986746,84.2,0``` in ```~/ardupilot/Tools/
 
 then
 ```bash
-cd ~/ardupilot/ArduCopter && sim_vehicle.py -f gazebo-iris -L Vivekananda --console --map
+cd ~/ardupilot/ArduCopter && sim_vehicle.py -L Vivekananda --console --map
 ```
 
 TADAMM!!! now you can see that start location of your drone is at the centre of the Vivekananda Hostel 
