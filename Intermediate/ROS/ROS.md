@@ -142,6 +142,10 @@ If you want to create a waypoint mission, this is most easily done on the map:
 
 For more SITL info check out [Using SITL](https://ardupilot.org/dev/docs/using-sitl-for-ardupilot-testing.html#using-sitl-for-ardupilot-testing) and here is the [Reference](https://ardupilot.org/dev/docs/copter-sitl-mavproxy-tutorial.html#copter-sitl-mavproxy-tutorial) of this SITL tutorial
 
+# Task
+Now you have to create a python script to takeoff the drone 
+
+**HINT** You can use ROS topics and ROS services to control the drone ( just launch the gazebo-ros, sitl and mavros like in ![Run it all](https://github.com/Bhaveshmeghwal21/AMC_Summer_Camp-2024/blob/main/Intermediate/ROS/Ardupilot-installation.md#run-it-all)
 
 
 
