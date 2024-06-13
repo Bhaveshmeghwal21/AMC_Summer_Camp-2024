@@ -145,7 +145,7 @@ For more SITL info check out [Using SITL](https://ardupilot.org/dev/docs/using-s
 # Task
 Now you have to create a python script to takeoff the drone 
 
-**HINT** You can use ROS topics and ROS services to control the drone ( just launch the gazebo-ros, sitl and mavros like in ![Run it all](https://github.com/Bhaveshmeghwal21/AMC_Summer_Camp-2024/blob/main/Intermediate/ROS/Ardupilot-installation.md#run-it-all)
+**HINT** You can use ROS topics and ROS services to control the drone ( just launch the gazebo-ros, sitl and mavros like in [Run it all](https://github.com/Bhaveshmeghwal21/AMC_Summer_Camp-2024/blob/main/Intermediate/ROS/Ardupilot-installation.md#run-it-all)
 
 
 
