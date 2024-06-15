@@ -1,5 +1,15 @@
 ## Task1:- Create a QR / Bar code Scanner
 
+<div>
+<div>
+<p style="font-size: larger;">QR code</p>
+<p ><img src="Photos/qr_code.png"></p>
+</div>
+<div>
+<p style="font-size: larger;">Bar code</p>
+<p ><img src="Photos/bar_code.png"></p>
+</div>
+</div>
 
 - Bar Code: A barcode is a visual, machine-readable representation of data, typically consisting of parallel lines of varying widths and spacing, used to encode information such as product numbers, serial numbers, and batch numbers for quick retrieval and processing by barcode readers.
 
