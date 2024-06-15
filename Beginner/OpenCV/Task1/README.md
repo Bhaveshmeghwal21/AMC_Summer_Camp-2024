@@ -1,11 +1,11 @@
 ## Task1:- Create a QR / Bar code Scanner
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
-  <div style="text-align: center;">
+<div style="display: flex; justify-content: center; align-items: center;">
+  <div style="text-align: center; margin-right: 20px;">
     <p style="font-size: larger;">QR Code</p>
     <img src="Photos/qr_code.png" alt="QR Code" width="200">
   </div>
-  <div style="text-align: center;">
+  <div style="text-align: center; margin-left: 20px;">
     <p style="font-size: larger;">Bar Code</p>
     <img src="Photos/bar_code.png" alt="Bar Code" width="200">
   </div>
