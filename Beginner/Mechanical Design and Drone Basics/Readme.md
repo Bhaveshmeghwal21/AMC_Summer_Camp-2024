@@ -1,15 +1,6 @@
 # Drone Basics 
 We have already conducted a workshop on drone basics, before moving ahead just go through [Drone-101](https://github.com/Bhaveshmeghwal21/Drone-101/tree/main)
 
-Now let's move to the task 
-## Task 1
-Here is a fun activity 😃
-
-Now you have to choose components of drones from online store and design a drone. Submit the list of the parts(with link) in excel sheet and calculate flight time for hovering & payload in the submission form
-
-**NOTE** 
-- When you choose a BLDC motor, you can find a thrust-current relation in their official website so that you can get your current draw with your payload. For eg check out [emax-mt2213 935kv](https://emaxmodel.com/products/emax-mt2213-935kv-multicopter-brushless-motor)
-- Also for flight time of hovering, consider current drawn by motor only
 
 
 
@@ -44,17 +35,37 @@ The mechanical design of a drone frame plays a crucial role in its overall perfo
 - The frame material affects overall drone weight, durability, and crash resistance.
 
 
-### Task 2 
+### Task 1 
 For this you have to design a quadcopter frame, you can watch this [tutorial](https://youtu.be/SU8QDIEdPk0?si=piGcGou45qyMqABW&t=2)
-For submission just screenrecord the last 5 min of designing in solidworks and submit the CAD file & video in link
 
-## Desginging of propellers
-The design of a propeller is crucial as it directly impacts the drone’s aerodynamic characteristics, including stability, maneuverability, and efficiency. Propellers are designed with specific airfoil profiles and blade shapes to optimize lift, reduce drag, and generate efficient thrust.
+The tasks aims to design a versatile and robust drone using SolidWorks software, tailored for applications such as aerial photography, surveillance, and delivery services. The design will focus on creating a quadcopter model with the following specifications:
+
+Size and Weight: The drone should have a compact and lightweight frame, with a maximum diagonal size of 500mm and a weight limit of 1.5kg including the battery and payload.
+Payload Capacity: Capable of carrying a minimum payload of 500g.
+Flight Time: A minimum flight time of 20 minutes on a single charge.
+ Frame Geometry: Ensure a symmetrical X or H frame design for stability, with arm lengths of 250mm.
+Motor Mounts: Design motor mounts to fit standard motor sizes, typically M3 or M4 screw mounting patterns.
+Propeller Size: Use propellers with a diameter of 9 to 12 inches, matching the motor’s specifications for optimal thrust.
+Electronic Speed Controllers (ESC): Allocate space for ESCs that can handle the current requirements of the motors.
+Camera Mount: Include an adjustable camera mount capable of holding standard action cameras with vibration dampening.
+Antenna Placement: Designate positions for RF and GPS antennas to avoid signal interference.
+Landing Gear: Incorporate retractable or fixed landing gear with a height of at least 75mm to protect the camera and sensors during landing.
+Battery Compartment: Design a secure battery compartment that can accommodate batteries up to 150mm x 50mm x 30mm.
+Arm Thickness: Aim for an arm thickness of 10mm to provide strength while minimizing drag.
+Body Height: Keep the body height around 50mm to accommodate electronics while maintaining a low profile.
+Propeller Clearance: Ensure at least 20mm clearance between propellers to prevent airflow interference.
+Flight Controller Bay: Design a bay for the flight controller with a standard 30.5mm mounting hole pattern.
+
+For submission just screenrecord the any part of 5 min of designing in solidworks and submit the CAD file & video in link
+
+**NOTE** 
+- When you choose a BLDC motor, you can find a thrust-current relation in their official website so that you can get your current draw with your payload. For eg check out [emax-mt2213 935kv](https://emaxmodel.com/products/emax-mt2213-935kv-multicopter-brushless-motor)
+- Also for flight time assume it is hovering and current drawn by motor only.
+-  if any deta missing then they can choose appropriate deta for making efficient drone.
 
 
-### Task 3 
-You have to design a propeller in solidworks just follow this [tutorial](https://youtu.be/ohcwMSK_Yfs?feature=shared) and you will understand it 
-For submission purpose screen record your last 5 min design and submit the CAD file & video in link
 
-_For creativity you can also make a propeller CAD model using this [geometrical data](https://www.apcprop.com/wp-content/uploads/2024/01/PE0-FILES_WEB-202401.zipx)_
+
+
+
 
