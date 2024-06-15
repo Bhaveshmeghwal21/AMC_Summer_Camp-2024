@@ -29,4 +29,5 @@ Together, hardware and control theory enable drones to perform a wide range of a
 
 ## INSTALLATION-
 Dual boot for windows and ROS Noetic installation- [Installation guide](https://github.com/Bhaveshmeghwal21/AMC_Summer_Camp-2024/blob/main/Windows.pdf)
+
 Solidworks installation - 
