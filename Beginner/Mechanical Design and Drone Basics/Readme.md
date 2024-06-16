@@ -56,7 +56,7 @@ Body Height: Keep the body height around 50mm to accommodate electronics while m
 Propeller Clearance: Ensure at least 20mm clearance between propellers to prevent airflow interference.
 Flight Controller Bay: Design a bay for the flight controller with a standard 30.5mm mounting hole pattern.
 
-For submission just screenrecord the any part of 5 min of designing in solidworks and submit the CAD file & video in link
+For submission just screenrecord the any part of 5 min of designing in solidworks and submit the CAD file & video in [link](https://docs.google.com/forms/d/e/1FAIpQLSeKhWzEIBl4Nn6bGHmLxqT-Xwug2iRiWKuPCz4XnJUj1gHCqg/viewform?usp=sf_link)
 
 **NOTE** 
 - When you choose a BLDC motor, you can find a thrust-current relation in their official website so that you can get your current draw with your payload. For eg check out [emax-mt2213 935kv](https://emaxmodel.com/products/emax-mt2213-935kv-multicopter-brushless-motor)
