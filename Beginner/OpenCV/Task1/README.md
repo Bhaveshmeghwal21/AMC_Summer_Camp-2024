@@ -21,6 +21,9 @@
 - Your task is to create a Python code which is capable of decoding a bar code or qr code (or both for bonus points) from a live video stream and display the info on screen or capable of directing to the given url
 - The more features in your code, the more impressive it will be for scoring good points.
 
+### Submission link - https://forms.gle/NzwgAYddSZswLbLZ8
+- Last date 21 June,2024 EOD
+
 
 Numerous online resources are available, but avoid copying code. Build from scratch to maximize understanding and skill. Embrace the learning journey with enthusiasm and creativity. 
 ## Happy coding!!!
