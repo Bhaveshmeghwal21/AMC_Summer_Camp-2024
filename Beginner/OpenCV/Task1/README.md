@@ -22,7 +22,7 @@
 - The more features in your code, the more impressive it will be for scoring good points.
 
 ### Submission link - https://forms.gle/NzwgAYddSZswLbLZ8
-- Last date 21 June,2024 EOD
+- Last date 22 June,2024 EOD
 
 
 Numerous online resources are available, but avoid copying code. Build from scratch to maximize understanding and skill. Embrace the learning journey with enthusiasm and creativity. 
