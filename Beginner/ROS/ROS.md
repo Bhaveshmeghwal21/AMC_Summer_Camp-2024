@@ -97,9 +97,10 @@ Now you can go on
 # Task 1
 Create a python script to run the turtle in square shape like this
 
+
+
+
 ![](https://github.com/Bhaveshmeghwal21/GIFs/blob/main/gif_summer_camp/Screenshot%20from%202024-05-27%2018-19-05.png)
-
-
 
 
 
