@@ -61,7 +61,7 @@ For submission just screenrecord the any part of 5 min of designing in solidwork
 **NOTE** 
 - When you choose a BLDC motor, you can find a thrust-current relation in their official website so that you can get your current draw with your payload. For eg check out [emax-mt2213 935kv](https://emaxmodel.com/products/emax-mt2213-935kv-multicopter-brushless-motor)
 - Also for flight time assume it is hovering and current drawn by motor only.
--  if any deta missing then they can choose appropriate deta for making efficient drone.
+-  If any data missing then you can choose appropriate data for making efficient drone.
 
 
 
