@@ -49,7 +49,7 @@ MAVLink is a very lightweight messaging protocol for communicating with drones (
 
 Now we will be going through the binary installation only
 ```bash
-sudo apt-get install ros-kinetic-mavros ros-noetic-mavros-extras
+sudo apt-get install ros-noetic-mavros ros-noetic-mavros-extras
 ```
 then install GeographicLib datasets by running ```install_geographiclib_datasets.sh``` script
 ```bash
