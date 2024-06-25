@@ -1,7 +1,8 @@
 
 ```c++
-bool you_have_completed_beginners_task
-cin>>you_have_completed_beginners_task;
+bool you_have_completed_beginners_task;
+cout<<"Enter 1 if you have completed tasks else 0"<<endl;
+cin>>you_have_completed_beginners_task; //enter only 1 or 0
 
 
 if (you_have_completed_beginners_task){
