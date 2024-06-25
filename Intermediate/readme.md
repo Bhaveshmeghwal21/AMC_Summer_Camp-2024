@@ -7,7 +7,7 @@ cin>>you_have_completed_beginners_task;
 if (you_have_completed_beginners_task){
   cout<<"Go to ROS Tasks first then OpenCV task"<<endl;
 } else {
-  cout<<"Try to complete them or you can still continue this tasks"<<endl;
+  cout<<"Try to complete them or you can still continue to these tasks"<<endl;
 }
 ```
 order is 
