@@ -39,6 +39,7 @@ To get started, ensure you have the following installed:
 - Python 3.x
 - OpenCV
 - ROS (Robot Operating System)
+- Ardupilot-SITL
 
 ## Resources
 
