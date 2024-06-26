@@ -1,4 +1,4 @@
-# ArUco Tag Detection and Landing with OpenCV and ROS
+# ArUco Tag Detection and Precision Landing with OpenCV and ROS
 
 This project involves detecting an ArUco tag using OpenCV and utilizing ROS (Robot Operating System) to land on the detected tag. The process is broken down into three main steps:
 
