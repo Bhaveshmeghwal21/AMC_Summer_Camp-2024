@@ -85,7 +85,7 @@ The command below shows how to put Copter into [CIRCLE](https://ardupilot.org/co
 
 ```bash
 mode circle
-param set circle_radius 20
+param set circle_radius 2000
 ```
 
 **NOTE** If you set the CIRCLE_RADIUS to zero the vehicle will rotate in place.
