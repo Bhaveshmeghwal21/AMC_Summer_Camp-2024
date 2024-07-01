@@ -148,7 +148,7 @@ Now you have to create a python script to takeoff the drone and land it at anoth
 **HINT** You can use ROS topics and ROS services to control the drone ( just launch the gazebo-ros, sitl and mavros like in [Run it all](https://github.com/Bhaveshmeghwal21/AMC_Summer_Camp-2024/blob/main/Intermediate/ROS/Ardupilot-installation.md#run-it-all)
 
 
-
+# [Submission link](https://forms.gle/SMz9tUAQJyN29ic1A)
 
 
 
